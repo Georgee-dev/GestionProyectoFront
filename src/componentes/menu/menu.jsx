@@ -19,6 +19,9 @@ const Navbar = () => {
         <li className="font-bold">
           <Link href="/Proyectos">Proyecto</Link>
         </li>
+        <li className="font-bold">
+          <Link href="/Equipos">Equipos</Link>
+        </li>
       </ul>
     </nav>
   );
