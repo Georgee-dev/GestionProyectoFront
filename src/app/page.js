@@ -41,7 +41,7 @@ export default function HomePage() {
         
         <div className="flex space-x-4">
           <Link 
-            href="/login" 
+            href="/Login" 
             className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300"
           >
             Iniciar Sesión
