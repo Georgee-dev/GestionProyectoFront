@@ -8,6 +8,8 @@ import ProyectoCard from '../../components/proyectos/ProyectoCard';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 
+
+
 export default function ProyectosPage() {
   const { user, loading } = useAuth();
   const [proyectos, setProyectos] = useState([]);
