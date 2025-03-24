@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/app/page.js
 'use client';
 
@@ -54,3 +55,16 @@ export default function HomePage() {
   // Si hay usuario y no está redirigiendo, mostrar algo
   return <div>Redirigiendo...</div>;
 }
+=======
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <section class="text-gray-600 body-font">
+      <div className="container p-8">
+        Aqui pagina de bienvenida!
+      </div>
+    </section>
+  );
+}
+>>>>>>> 4d4f12c528e56ab79421525f016226a25f8411e4
