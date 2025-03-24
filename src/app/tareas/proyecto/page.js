@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '../../../../hooks/useAuth';
-import { getProyecto } from '../../../../services/proyectos';
-import { getTareasAsignadas } from '../../../../services/tareas';
-import TareaCard from '../../../../components/tareas/TareaCard';
+import { useAuth } from '@/hooks/useAuth';
+import { getProyecto } from '@/services/proyectos';
+import { getTareasAsignadas } from '@/services/tareas';
+import TareaCard from '@/components/tareas/TareaCard';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 

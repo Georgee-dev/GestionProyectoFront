@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '../../hooks/useAuth';
-import { getProyectos, deleteProyecto } from '../../services/proyectos';
+import { getProyectos, deleteProyecto } from '@/services/proyectos';
 import ProyectoCard from '../../components/proyectos/ProyectoCard';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
