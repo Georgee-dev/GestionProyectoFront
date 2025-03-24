@@ -1,7 +1,8 @@
+
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8081/GestionProyectoAPI/',
+  baseURL: 'https://tarea.transforma.edu.sv/',
   withCredentials: true,  
   headers: {
     'Content-Type': 'application/json',
