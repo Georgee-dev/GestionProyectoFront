@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+/**import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,6 +23,37 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+      </body>
+    </html>
+  );
+}**/
+
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { Toaster } from 'react-hot-toast';
+import { AuthProvider } from '../hooks/useAuth';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata = {
+  title: 'Gestión de Proyectos',
+  description: 'Sistema de gestión de proyectos',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es">
+      <body className={inter.className}>
+        <AuthProvider>
+          <Toaster position="top-right" />
+          <Navbar />
+          <div className="flex">
+            <Sidebar />
+            <main className="flex-1 p-6">{children}</main>
+          </div>
+        </AuthProvider>
       </body>
     </html>
   );

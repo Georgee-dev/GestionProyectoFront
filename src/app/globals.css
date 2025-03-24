@@ -24,3 +24,76 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Estilos para formularios */
+input, select, textarea {
+  color: #333 !important;
+  background-color: white !important;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: #999 !important;
+}
+
+.form-select option {
+  color: #333 !important;
+  background-color: white !important;
+}
+
+/* Estilos para elementos seleccionados */
+select option:checked {
+  background-color: #dbeafe !important; /* Light blue background */
+  color: #1e40af !important; /* Darker blue text */
+  font-weight: bold;
+}
+
+/* Asegurarnos de que el texto en los formularios sea visible */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+/* Mejora de contraste para textos en fondo claro */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+/* Mejorar visibilidad de textos en cabeceras */
+h1, h2, h3, h4, h5, h6 {
+  color: #1f2937 !important;
+}
+
+/* Mejorar contraste en tarjetas */
+.bg-white {
+  color: #1f2937 !important;
+}
+
+/* Mejorar contraste en enlaces y títulos de secciones */
+.font-semibold, .font-bold {
+  color: #1f2937 !important;
+}
+
+/* Estilos específicos para elementos del dashboard */
+.dashboard-card h2, 
+.dashboard-section-title {
+  color: #1f2937 !important;
+  font-weight: 600;
+}
+
+/* Estilos para los enlaces del sidebar */
+.sidebar-link {
+  color: #1f2937 !important;
+}
+
+/* Mejora la visibilidad de los textos en las tarjetas */
+.card-title {
+  color: #1f2937 !important;
+  font-weight: 600;
+}
+
+/* Mejora el contraste global */
+body {
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
