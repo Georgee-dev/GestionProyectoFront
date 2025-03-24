@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { registrarProgresoTarea, getProgresoTarea } from '../../services/tareas';
+import { registrarProgresoTarea, getProgresoTarea } from '@/services/tareas';
 import toast from 'react-hot-toast';
 
 export default function TareaCard({ tarea }) {

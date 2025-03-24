@@ -3,7 +3,7 @@
 
 import { useState, useEffect, createContext, useContext } from 'react';
 import { useRouter } from 'next/navigation';
-import { login as loginService, logout as logoutService } from '../services/auth';
+import { login as loginService, logout as logoutService } from '@/services/auth';
 
 const AuthContext = createContext();
 
