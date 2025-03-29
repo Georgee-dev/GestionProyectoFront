@@ -11,7 +11,7 @@ export const login = async (credentials) => {
       contra: credentials.contra
     };
     
-    const response = await api.post('Login/login', loginData);
+    const response = await api.post('https://tarea.transforma.edu.sv/', loginData);
     
     
     if (response.data && response.data.id) {
